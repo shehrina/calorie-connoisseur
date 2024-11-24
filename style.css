@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Palatino;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; /* Add this to make items stack vertically */
+    height: 100vh;
+    background-color: #d7fff1;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .box {
+    width: 48%;
+    padding: 20px;
+    background: #aafcb8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #285943;
+    margin-bottom: 20px;
+  }
+  
+  .input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #77af9c;
+    border-radius: 4px;
+    background-color: #8cd790;
+    color: #285943;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #77af9c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #8cd790;
+  }
+  
+  .summary {
+    margin: 20px 0;
+  }
+  
+  .summary h2 {
+    color: #285943;
+  }
+  
+  .meal-list,
+  .exercise-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .meal-item,
+  .exercise-item {
+    padding: 10px;
+    background-color: #aafcb8;
+    border-bottom: 1px solid #77af9c;
+    color: #285943;
+  }
+  
+  .meal-item:last-child,
+  .exercise-item:last-child {
+    border-bottom: none;
+  }
+  
+  #combined-calories-box {
+    background-color: #7ED4AD;
+    color: #ffffff;
+  }
+  
+  #combined-calories {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Page title styling for both top and bottom titles */
+  .page-title {
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    color: #285943;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  /* Specific margin for the top title */
+  .top-title {
+    margin-top: 0; /* No top margin for the first title */
+  }
+  
+  /* Specific margin for the bottom title */
+  .bottom-title {
+    margin-top: 30px; /* Space above the bottom title */
+  }
+  
