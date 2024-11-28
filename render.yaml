@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: calorie-connoisseur
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NUTRITIONIX_APP_ID
+        sync: false
+      - key: NUTRITIONIX_API_KEY
+        sync: false
